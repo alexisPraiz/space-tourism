@@ -1,0 +1,186 @@
+@media screen and (max-width: 800px){
+    body{
+        background-image: url(../space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg);
+        background-position: bottom;
+        background-size: cover;
+        font-size: 14px;
+    }
+    /*---==== Home: Start ====---*/
+    #home .column_left p:first-child{
+        font-size: 1.2em;
+    }
+    #home .column_left span{
+        font-size: 6em;
+    }
+
+    #home .column_right{
+        width: 180px;
+        height: 180px;
+    }
+    /*---==== Home: End ====---*/
+
+    /*---==== Destination: Start ====---*/
+    #destination{
+        width: 65%;
+    }
+    /*---==== Destination: End ====---*/
+
+    /*---==== Crew: Start ====---*/
+    #crew .crew img{
+        width: 75px
+    }
+    #crew .crew div{
+        font-size: .89em;
+    }
+    /*---==== Crew: End ====---*/
+}
+
+@media screen and (max-width: 700px){
+    body{
+        font-size: 13px;
+        padding-left: 15px;
+    }
+    .menu_links{
+        width: 60%;
+    }
+    /*---==== Home: Start ====---*/
+    #home{
+        width: 95%;
+    }
+    #home .column_left{
+        margin: 0;
+        margin-left: 20px;
+    }
+    #home .column_left span{
+        font-size: 5.5em;
+    }
+    #home .column_left::before{
+        width: 90%;
+    }
+    #home .column_right{
+        width: 160px;
+        height: 160px;
+    } 
+    /*---==== Home: End ====---*/
+
+    /*---==== Destination: Start ====---*/
+    #destination{
+        width: 75%;
+    }
+    /*---==== Destination: End ====---*/
+
+    /*---==== Crew: Start ====---*/
+    #crew{
+        width: 95%;
+    }
+    #crew .crew img{
+        width: 65px
+    }
+    #crew .crew div{
+        font-size: .89em;
+    }
+    /*---==== Crew: End ====---*/
+}
+
+@media screen and (max-width: 600px){
+    .menu_links{
+        width: 65%;
+    }
+    /*---==== Home: Start ====---*/
+    #home .column_left p:first-child{
+        font-size: 1em;
+    }
+    #home .column_left span{
+        font-size: 4.8em;
+    }
+    #home .column_left::before{
+        width: 0;
+    }
+    /*---==== Home: End ====---*/
+
+    /*---==== Destination: Start ====---*/
+    #destination{
+        width: 85%;
+    }
+    /*---==== Destination: End ====---*/
+}
+@media screen and (max-width: 500px){
+    body{
+        background-image: url(../space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg);
+        padding: 0;
+        font-size: 14px;
+    }
+    .logo{
+        display: none;
+    }
+    .menu_links{
+        width: 100%;
+    }
+    /*---==== Home: Start ====---*/
+    #home{
+        padding-top: 50px;
+        grid-template-columns: none;
+        row-gap: 40px;
+    }
+    #home .column_right{
+        width: 140px;
+        height: 140px;
+        margin-right: 10px;
+        grid-row: 1/2;
+    }
+    /*---==== Home: End ====---*/
+
+    /*---==== Destination: Start ====---*/
+    #destination{
+        width: 95%;
+    }
+    #destination .conteiner-options .option{
+        padding: 0;
+    }
+    #destination .conteiner-options .option img{
+        width: 60%;
+    }
+    /*---==== Destination: End ====---*/
+
+    /*---==== Crew: Start ====---*/
+    #crew{
+        grid-template-columns: none;
+        grid-auto-flow: row;
+        row-gap: 5px;
+        height: 100vh;
+    }
+    /*---==== Crew: End ====---*/
+
+    /*---==== Technology: Start ====---*/
+    #technology{
+        display: block;
+        margin-top: 20px;
+    }
+    #technology .technology{
+        margin-bottom: 10px;
+    }
+    /*---==== Technology: End ====---*/
+}
+@media screen and (max-width: 380px){
+    /*---==== Home: Start ====---*/
+    #home{
+        width: 100%;
+    }
+    #home .column_left{
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    /*---==== Home: End ====---*/
+ 
+    /*---==== Destination: Start ====---*/
+    #destination .conteiner-options .option img{
+        width: 70%;
+    }
+    /*---==== Destination: End ====---*/
+}
+@media screen and (max-width: 350px){
+    #crew{
+        margin-top: 70px;
+    }
+}

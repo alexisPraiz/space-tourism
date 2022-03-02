@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    padding-right: 0;
+    background: url(../space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+}
+/*---==== Main styles: Start ====---*/
+/*home: start*/
+#home{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 200px);
+}
+#home .column_left{
+    color: #fff;
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;   
+    position: relative;
+}
+#home .column_left p:first-child{
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: .5px;
+}
+#home .column_left span{
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 7em;
+    font-family: 'Bellefair', sans-serif;
+    letter-spacing: 5px;
+}
+#home .column_left p:last-child{
+    line-height: 1.4em;
+}
+#home .column_right{
+    justify-self: end;
+    -ms-flex-item-align: end;
+        align-self: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 50px;
+    font-size: 1.3em;
+    color: #2b2b2b;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#home .column_left::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff3;
+    position: absolute;
+    top: -35px;
+    z-index: 50;
+}
+#home .column_right:hover{
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+/*home: end*/
+/*---==== Main styles: End ====---*/
+
+/*---==== Destination: Start ====---*/
+#header-destination{
+    text-align: center;
+    color: #ccc;
+}
+#destination{
+    width: 50%;
+    height: calc(100vh - 138px);
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+#destination i{
+    color: #fff;
+    padding: 10px;
+    font-size: 1.4em;
+    background: #000;
+    border-radius: 50%;
+    -webkit-transition: background .1s ease;
+    -o-transition: background .1s ease;
+    transition: background .1s ease;
+    z-index: 100;
+}
+#destination i:hover{
+    background: #fff1;
+    cursor: pointer
+}
+#destination .conteiner-options{
+    width: 400%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    margin: 0 15px;
+}
+#destination .conteiner-options .option{
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    padding: 1em;
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    -o-transition: transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+}
+#destination .conteiner-options .option h2{
+    color: #bbb;
+}
+#destination .conteiner-options .option img{
+    width: 50%;
+    height: auto;
+    padding: 1em 0;
+}
+#destination .conteiner-options .option ul{
+    color: #ccc;
+    list-style: none;
+    display: grid;
+    row-gap: 8px;
+}
+/*---==== Destination: End ====---*/
+
+/*---==== Crew: Start ====---*/
+#header-crew{
+    text-align: center;
+    color: #ccc;
+}
+#crew{
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 138px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: -webkit-max-content;
+    grid-auto-rows: max-content; 
+    gap: 20px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.crew{
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    -webkit-box-shadow: 0px 0px 11px -3px #fff8;
+            box-shadow: 0px 0px 11px -3px #fff8;
+    border-radius: 10px;
+}
+#crew .crew img{
+    width: 100px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+#crew .crew div{
+    color: #ccc;
+    font-size: .9em;
+}
+#crew .crew div h3{
+    margin-bottom: .5em;
+}
+/*---==== Crew: End ====---*/
+
+/*---==== Technology: Start ====---*/
+#header-technology{
+    text-align: center;
+    color: #ccc;
+}
+#technology{
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 138px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.technology{  
+    -webkit-box-flex: 1;  
+        -ms-flex: 1;  
+            flex: 1;
+    color: #ccc;
+    border: 1px solid rgb(0, 0, 90);
+    padding: 1.3em 1em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;     
+    font-size: .9em;  
+    text-align: center;
+    border-radius: 10px;   
+}
+.technology img{
+    width: 85%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    
+}
+.technology h3{
+    padding: 10px 0;
+}
+/*---==== Technology: End ====---*/
